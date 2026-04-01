@@ -4,16 +4,32 @@ import Container from '../ui/Container';
 
 const projects = [
   {
+    title: 'Student Grade Portal',
+    description: 'A fullstack web application with admin and student portals for managing grades, subjects, and academic records. Features secure authentication, grade management, and real-time updates.',
+    highlights: [
+      'Admin & student roles',
+      'Grade management system',
+      'Fullstack architecture',
+      'Secure authentication'
+    ],
+    techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Vercel', 'Render'],
+    link: 'https://exact-gradeportal.vercel.app/',
+    github: 'https://github.com/AbdulPaito',
+    icon: Layers,
+    color: 'from-violet-500 to-purple-500',
+    gradient: 'from-violet-500/20 via-purple-500/10 to-transparent',
+  },
+  {
     title: 'Nursing Student Portal',
-    description: 'A fullstack web application with admin and student portals. Includes features such as announcements, subject management, events, and file uploads. Fully deployed and functional.',
+    description: 'A fullstack web application with admin and student portals. Includes features such as announcements, subject management, events, and file uploads (PDF & music) via Cloudinary. Fully deployed and functional.',
     highlights: [
       'Real-world use',
       'Admin & student roles',
-      'Fullstack architecture',
+      'Cloudinary file uploads',
       'File upload system'
     ],
-    techStack: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-    link: 'https://nursingwebs.netlify.app/',
+    techStack: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Cloudinary'],
+    link: 'https://cahseventsdocs.netlify.app/',
     github: 'https://github.com/AbdulPaito',
     icon: Layers,
     color: 'from-blue-500 to-cyan-500',
@@ -86,7 +102,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}

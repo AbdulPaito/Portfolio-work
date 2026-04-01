@@ -19,7 +19,7 @@ const skillCategories = [
     title: 'Tools & Deployment',
     icon: Cloud,
     color: 'from-violet-500 to-purple-500',
-    skills: ['Netlify', 'Render', 'Git', 'GitHub', 'API Integration'],
+    skills: ['Netlify', 'Vercel', 'Render', 'Git', 'GitHub', 'Cloudinary', 'API Integration'],
   },
   {
     title: 'VA & Data Skills',
